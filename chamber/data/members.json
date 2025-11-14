@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Sunrise Bakery",
+    "address": "12 Market Street, Benin City, Nigeria",
+    "phone": "+234 800 123 4567",
+    "website": "https://sunrisebakery.com",
+    "image": "sunrise-bakery.png",
+    "membershipLevel": 3,
+    "info": "Family-owned bakery specializing in bread and pastries."
+  },
+  {
+    "name": "GreenTech Solutions",
+    "address": "45 Innovation Lane, Benin City, Nigeria",
+    "phone": "+234 900 765 4321",
+    "website": "https://greentech.com",
+    "image": "greentech.png",
+    "membershipLevel": 2,
+    "info": "IT company providing eco-friendly technology solutions."
+  },
+  {
+    "name": "Harmony Fitness Center",
+    "address": "78 Wellness Road, Benin City, Nigeria",
+    "phone": "+234 812 345 6789",
+    "website": "https://harmonyfitness.com",
+    "image": "harmony-fitness.png",
+    "membershipLevel": 1,
+    "info": "Gym and wellness center offering personal training and classes."
+  },
+  {
+    "name": "Elite Travel Agency",
+    "address": "33 Adventure Avenue, Benin City, Nigeria",
+    "phone": "+234 809 876 5432",
+    "website": "https://elitetravel.com",
+    "image": "elite-travel.png",
+    "membershipLevel": 3,
+    "info": "Full-service travel agency specializing in international tours."
+  },
+  {
+    "name": "Bright Future Academy",
+    "address": "56 Learning Lane, Benin City, Nigeria",
+    "phone": "+234 901 234 5678",
+    "website": "https://brightfutureacademy.com",
+    "image": "bright-future.png",
+    "membershipLevel": 2,
+    "info": "Educational institution offering primary and secondary programs."
+  },
+  {
+    "name": "Oceanic Interiors",
+    "address": "21 Design Street, Benin City, Nigeria",
+    "phone": "+234 803 456 7890",
+    "website": "https://oceanicinteriors.com",
+    "image": "oceanic-interiors.png",
+    "membershipLevel": 1,
+    "info": "Home decor and interior design company."
+  },
+  {
+    "name": "Nova Pharmacy",
+    "address": "12 Health Avenue, Benin City, Nigeria",
+    "phone": "+234 807 345 6789",
+    "website": "https://novapharmacy.com",
+    "image": "nova-pharmacy.png",
+    "membershipLevel": 3,
+    "info": "Local pharmacy providing medications and health consultations."
+  },
+  {
+    "name": "Icreamy Cafe",
+    "address": "88 Gourmet Street, Benin City, Nigeria",
+    "phone": "+234 805 678 1234",
+    "website": "https://stellarcafe.com",
+    "membershipLevel": 2,
+    "info": "Cafe offering coffee, pastries, and a cozy environment for customers."
+  }
+]
+

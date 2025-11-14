@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: #fff;
+  padding: 20px 0;
+  
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Directory Section */
+.directory-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.business-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.business-card h2 {
+  margin-top: 0;
+  color: #004080;
+}
+
+.business-card p {
+  margin: 8px 0;
+}
+
+.business-card a {
+  color: #004080;
+  text-decoration: none;
+}
+
+.business-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+}
+.business-logo {
+  display: block;
+  margin: 0 auto 15px; /* center and add spacing below */
+  width: 100px; /* adjust size as needed */
+  height: 100px; /* keep it square */
+  object-fit: contain; /* ensures the whole logo fits without distortion */
+  border-radius: 8px; /* optional: rounded corners */
+  background-color: #f4f4f4; /* optional: light background for logos with transparency */
+  padding: 5px; /* optional: small padding around logo */
+}
+
+.members-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.members-container.grid-view {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+
+
+.member-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.member-logo {
+  display: block;
+  margin: 0 auto 15px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  padding: 5px;
+}
+
+.view-toggle {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.view-toggle button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-toggle button:hover {
+  background-color: #004080;
+  color: #fff;
+}
+
+
+
+
+.members-container.list-view .member-card h2 {
+  font-size: 1.2rem;
+  color: #004080;
+}
+
+/* List view: plain horizontal rows */
+.members-container.list-view {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.members-container.list-view .member-card {
+  display: flex;           /* horizontal arrangement */
+  justify-content: flex-start;
+  gap: 30px;               /* space between items */
+  padding: 5px 10px;       /* small padding */
+  border-bottom: 1px solid #ddd; /* subtle line separator */
+  background-color: transparent; /* no background */
+  box-shadow: none;        /* remove shadow */
+  border-radius: 0;        /* remove rounding */
+  margin: 0;
+  align-items: center;
+}
+
+/* Zebra striping for readability */
+.members-container.list-view .member-card:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Text styling */
+.members-container.list-view .member-card h2,
+.members-container.list-view .member-card p,
+.members-container.list-view .member-card a {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.members-container.list-view .member-card a:hover {
+  text-decoration: underline;
+  color: #004080;
+}
+
+
+
+
