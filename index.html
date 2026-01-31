@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edohub Chamber of Commerce</title>
+  <meta name="description" content="Edohub Chamber of Commerce — supporting local businesses." />
+
+  <!-- Open Graph image (uses the uploaded image path) -->
+  <meta property="og:title" content="Edohub Chamber of Commerce" />
+  <meta property="og:description" content="Discover members, events, and resources from Edohub Chamber of Commerce." />
+  <meta property="og:image" content="/mnt/data/commerce.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Font (Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- normalize.css and main stylesheet (you already have style.css from your directory page) -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+
+  
+</head>
+<body>
+  <!-- header / navigation (keeps the same structure as your directory page) -->
+  <header>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <img src="logo.png" alt="Edohub logo" style="width:42px;height:42px;object-fit:contain;">
+        <span style="font-weight:700;">Edohub Chamber of Commerce</span>
+      </div>
+      <nav>
+        <ul style="display:flex;gap:18px;list-style:none;margin:0;padding:0;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- using uploaded hero image path -->
+    <img src="images/logo-placeholde.png" alt="Edohub hero image">
+    <div class="cta">
+      <a href="join.html" aria-label="Join Edohub Chamber">Join the Chamber</a>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="home-grid container">
+    <h1 style="margin:0 0 12px;">Home</h1>
+
+    <!-- panels: Events | Current Weather | Forecast -->
+    <div class="panels">
+      <div class="panel" id="events-panel">
+        <h3>Events</h3>
+        <div id="events-list">
+          <!-- you can populate with real events; placeholder below -->
+          <p style="margin:0;">No upcoming events. <a href="events.html">See all events</a></p>
+        </div>
+      </div>
+
+      <div class="panel" id="weather-current">
+        <h3>Current Weather</h3>
+        <div id="weather-now">
+          <p>Loading weather…</p>
+        </div>
+      </div>
+
+      <div class="panel" id="weather-forecast">
+        <h3>Weather Forecast</h3>
+        <div id="forecast">
+          <p>Loading forecast…</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spotlights -->
+    <section>
+      <h2 style="margin:0 0 12px;">Member Spotlights</h2>
+      <div class="spotlights" id="spotlights">
+        <!-- JS injects 2-3 random gold/silver members here -->
+      </div>
+    </section>
+
+  </main>
+  <script src="scripts/home.js" defer></script>
+
+  <!-- footer (consistent with directory) -->
+  <footer style="background:#eee;padding:18px 0;margin-top:28px;">
+    <div class="container">
+      <div>
+        <strong>Edohub Chamber of Commerce</strong><br>
+        10 Market Avenue<br>
+        Benin City, Nigeria<br>
+        <a href="mailto:info@edohubcc.org">info@edohubcc.org</a><br>
+        (234) 800-000-000
+      </div>
+
+      <div style="text-align:center;">
+        <!-- social icons (replace with your images or icons) -->
+        <a href="#" aria-label="YouTube" style="margin:0 8px;">🔴</a>
+        <a href="#" aria-label="Twitter" style="margin:0 8px;">🐦</a>
+        <a href="#" aria-label="LinkedIn" style="margin:0 8px;">🔗</a>
+      </div>
+
+      <div style="text-align:right;">
+        <small>WDD231 Class Project<br> © Edohub Chamber of Commerce</small>
+      </div>
+    </div>
+    <script src="scripts/event.js" defer></script> 
+    <script src="scripts/hom.js" defer></script>
+
+  </footer>
+</body>
+</html>

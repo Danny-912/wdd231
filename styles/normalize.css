@@ -1,0 +1,64 @@
+/* ------------------------
+   Base Reset / Normalize
+--------------------------*/
+
+/* Remove default margin and padding for body */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Paragraphs */
+p {
+  margin: 0;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
+/* Buttons and inputs */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Misc */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
