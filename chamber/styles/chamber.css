@@ -290,22 +290,83 @@ body {
       gap: 12px;
       align-items: center;
     }
-    .spotlight-card img { width:72px; height:72px; object-fit:contain; border-radius:6px; background:#f4f4f4; padding:6px; }
-    .spotlight-card h4 { margin:0 0 6px; font-size:1rem; }
-    .badge { display:inline-block; padding:4px 8px; border-radius:999px; font-size:0.78rem; font-weight:700; margin-left:8px; }
-    .badge.gold { background:#FFD700; color:#000; }
-    .badge.silver { background:#c0c0c0; color:#000; }
+/* =========================
+   Spotlight Cards
+   ========================= */
+.spotlight-card img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  padding: 6px;
 
-    /* footer spacing */
-    footer .container { display:flex; justify-content:space-between; gap:16px; align-items:center; 
-      flex-wrap:wrap; background-color: #004080; color: #fff; }
+  background-color: #f4f4f4;
+  border-radius: 6px;
+}
 
-    /* small-screen tweaks */
-    @media (min-width: 800px) {
-      .home-grid { grid-template-columns: 1fr; max-width:1200px; margin:0 auto; }
-      .panels { grid-template-columns: 1fr 320px 220px; align-items:start; }
-      .spotlights { grid-template-columns: repeat(3, 1fr); }
-    }
+.spotlight-card h4 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+/* =========================
+   Membership Badges
+   ========================= */
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-left: 8px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  border-radius: 999px;
+}
+
+.badge.gold {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.badge.silver {
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  background-color: #004080;
+  color: #ffffff;
+}
+
+/* =========================
+   Layout – Larger Screens
+   ========================= */
+@media (min-width: 800px) {
+  .home-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+
+  .panels {
+    grid-template-columns: 1fr 320px 220px;
+    align-items: start;
+  }
+
+  .spotlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+   
   
 
 
@@ -715,3 +776,4 @@ a.button:focus {
 @media (min-width: 900px) {
   .discover-intro { font-size: 1.05rem; }
 }
+
