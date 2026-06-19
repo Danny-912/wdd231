@@ -1,8 +1,8 @@
 // scripts/main.js
 // Entry point: sets up event listeners and handles user interactions
 
-import { fetchWeather } from "./weatherApi.js";
-import { getClothingSuggestion } from "./clothingLogic.js";
+import { fetchWeather } from "./weatherapi.js";
+import { getClothingSuggestion } from "./clothinglogic.js";
 import { displayWeather, displayClothingSuggestion, updateBackground, displayRecentSearches } from "./ui.js";
 
 const searchBtn = document.getElementById("searchBtn");
