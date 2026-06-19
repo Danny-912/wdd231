@@ -16,3 +16,4 @@ export async function fetchWeather(city) {
     console.error("Search Error:", error);
     alert(error.message);
 }
+}
