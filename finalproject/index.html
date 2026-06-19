@@ -1,238 +1,193 @@
 <!doctype html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Ultimate Jollof Showdown</title>
-  <meta name="description" content="Compare Nigerian, Ghanaian, and Senegalese jollof
-   rice with recipes, fun facts, a voting poll, and a matching game." />
-  <meta name="Author" content="Odiase Ngozi Daniella">
-  <title> The Ultimate Jollof Showdown</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/jollof.css">
-  <script src="scripts/jollof.js" defer></script> 
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Ultimate Jollof Showdown | Home</title>
+<meta name="description" content="Explore the ultimate Jollof showdown between Nigeria, Ghana, and Senegal.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/jollof.css">
+<script src="scripts/jollof.js" defer></script>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container nav" role="navigation" aria-label="Primary">
-      <div class="logo">🍚 <span>Jollof</span> Showdown</div>
-      <nav class="links">
-        <a href="recipes">Recipes</a>
-        <a href="facts">Fun Facts</a>
-        <a href="vote">Vote</a>
-        <a href="game">Matching Game</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero container" id="top">
-      <div class="hero-inner">
-        <div>
-          <h1>The Ultimate Jollof Showdown</h1>
-          <p>
-            Compare iconic jollof styles from Nigeria, Ghana, and Senegal. Explore
-            quick recipe notes, read fun facts, cast your vote, and play a 
-            light‑hearted ingredient matching game.
-          </p>
-          <div class="cta-row">
-            <a class="btn" href="#vote">Cast your vote</a>
-            <a class="btn secondary" href="#recipes">Browse recipes</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="img-slot">
-            <img src="images/jollofbannner.jpg" alt="jollof banner" loading="lazy"> 
-          </div>
-          <p class="small" style="margin:8px 0 0"></p>
-        </div>
-      </div>
-    </section>
+<header class="site-header">
+<div class="container nav">
+<div class="logo">🍚 <span>Jollof</span> Showdown</div>
 
-    <!-- Recipes -->
-    <section id="recipes">
-      <div class="container">
-        <h2 class="section-title"> Recipe Snapshots</h2>
-        <p class="section-sub">Nigeria vs Ghana vs Senegal</p>
+<nav class="links">
+<a href="index.html">Home</a>
+<a href="recipes.html">Recipes</a>
+<a href="community.html">Community</a>
+</nav>
+</div>
+</header>
 
-        <div class="grid cards">
-          <!-- Nigeria -->
-          <article class="card" aria-labelledby="ng-title">
-            <div class="recipe-img"></div>
-            <img src="images/nigeriajollof.jpg" alt="Nigeria Jollof" loading="lazy">
-            <div class="flag">Nigeria 🇳🇬</div>
-            <h3 id="ng-title" style="margin:.4rem 0 .3rem">Smoky Party Jollof</h3>
-            <div class="meta">
-              <span class="badge">Parboiled Basmati rice</span>
-              <span class="badge">Tomato‑pepper base</span>
-              <span class="badge">Thyme & curry</span>
-              <span class="badge">Protein-Chicken</span>
-            </div>
-            <ul class="ul">
-              <li>Blend tomatoes, red bell pepper, scotch bonnet, onion.</li>
-              <li>Fry with tomato paste, season (thyme, curry, maggi, bay leaf, Paprika, bouillon etc.).</li>
-              <li>Add stock + parboiled rice, cover with foil paper and steam until fluffy & smoky. Best served with ripe plantain and Chicken for protein.</li>
-            </ul>
-          </article>
+<main>
 
-          <!-- Ghana -->
-          <article class="card" aria-labelledby="gh-title">
-            <div class="recipe-img"></div>
-            <img src="images/ghanajollof.jpg" alt="Ghana Jollof" loading="lazy">
-            <div class="flag">Ghana 🇬🇭</div>
-            <h3 id="gh-title" style="margin:.4rem 0 .3rem">Well‑Spiced Stew Base</h3>
-            <div class="meta">
-              <span class="badge">Long‑grain rice</span>
-              <span class="badge">Chopped-tomato stew</span>
-              <span class="badge">Bay & cloves</span>
-              <span class="badge">Carrots</span>
-              <span class="badge">Bell Pepper</span>
-            </div>
-            <ul class="ul">
-              <li>Build a rich stew base with tomatoes, onions, grated garlic-ginger and scotched bunnet. Add curry, thyme, salt etc.</li>
-              <li>Stir in rice and stock; cover for low‑and‑slow absorption.</li>
-              <li>Finish with veg sides or grilled chicken.</li>
-            </ul>
-          </article>
+<section class="hero container">
+<div class="hero-inner">
 
-          <!-- Senegal -->
-          <article class="card" aria-labelledby="sn-title">
-            <div class="recipe-img"></div>
-            <img src="images/senegajollof.jpg" alt="Senegal Jollof" loading="lazy">
-            <div class="flag">Senegal 🇸🇳</div>
-            <h3 id="sn-title" style="margin:.4rem 0 .3rem">Thieboudienne (Ceebu Jën)</h3>
-            <div class="meta">
-              <span class="badge">Broken rice</span>
-              <span class="badge">Fish + veg</span>
-              <span class="badge">Fermented nététou</span>
-            </div>
-            <ul class="ul">
-              <li>Make a flavorful tomato‑onion base with fish and vegetables.</li>
-              <li>Season with nététou (optional) and aromatics.</li>
-              <li>Simmer, then steam rice in the sauce; serve with fish & vegetables.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+<div>
+<h1>The Ultimate Jollof Showdown</h1>
 
-    <!-- Fun Facts -->
-    <section id="facts">
-      <div class="container">
-        <h2 class="section-title">Fun Facts & Culture</h2>
-        <p class="section-sub">Jollof is a friendly rivalry across West Africa. It’s
-             a badge of national pride. Across Nigeria, Ghana, Senegal, and beyond, 
-             each country claims to have the true and best jollof recipe. The 
-             debates—lovingly called the “Jollof Wars”—are loud, playful, and full 
-             of passion.</p>
-        <div class="facts">
-          <div class="fact"><strong>Origins:</strong> Many trace jollof to the Wolof (Jolof) Empire in the Senegambia region.</div>
-          <div class="fact"><strong>Smoky Flavor:</strong> In Nigeria, party jollof often gets a signature smoky note from the bottom‑pot steam.</div>
-          <div class="fact"><strong>Names:</strong> In Senegal, jollof is known as <em>Thieboudienne</em> or <em>Ceebu Jën</em>, typically with fish.</div>
-        </div>
-      </div>
-    </section>
+<p>
+Compare iconic jollof styles from Nigeria, Ghana, and Senegal.
+Explore recipes, discover cultural facts, cast your vote, and join
+the conversation around West Africa's most famous rice dish.
+</p>
 
-    <!-- Vote -->
-    <section id="vote">
-      <div class="container">
-        <h2 class="section-title">Cast Your Vote</h2>
-        <p class="section-sub">Which version of jollof wins <em>your</em> plate today? One vote per browser (saved locally).</p>
+<div class="cta-row">
+<a class="btn" href="community.html">Cast Your Vote</a>
+<a class="btn secondary" href="recipes.html">Browse Recipes</a>
+</div>
+</div>
 
-        <div class="card poll" aria-live="polite">
-          <div class="buttons">
-            <button class="btn" data-country="Nigeria">Vote 🇳🇬 Nigeria</button>
-            <button class="btn" data-country="Ghana">Vote 🇬🇭 Ghana</button>
-            <button class="btn" data-country="Senegal">Vote 🇸🇳 Senegal</button>
-            <button class="btn secondary" id="resetVotes" title="Clear your local vote data">Reset (local)</button>
-          </div>
+<div class="hero-card">
+<div class="img-slot">
+<img src="images/jollofbanner.jpg"
+alt="Jollof Banner"
+loading="lazy"
+style="width:100%; border-radius:12px;">
+</div>
+</div>
 
-          <div class="bar-label"><span>Nigeria</span><span id="lbl-ng">0%</span></div>
-          <div class="bar" aria-label="Nigeria vote share"><span id="bar-ng"></span></div>
-
-          <div class="bar-label"><span>Ghana</span><span id="lbl-gh">0%</span></div>
-          <div class="bar" aria-label="Ghana vote share"><span id="bar-gh"></span></div>
-
-          <div class="bar-label"><span>Senegal</span><span id="lbl-sn">0%</span></div>
-          <div class="bar" aria-label="Senegal vote share"><span id="bar-sn"></span></div>
-
-          <p class="small" id="voteStatus" role="status"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Matching Game -->
-    <section id="game">
-      <div class="container">
-        <h2 class="section-title">Ingredient Matching Game</h2>
-        <p class="section-sub">Drag each ingredient chip into the country you think it best matches. (This is a simplified, just‑for‑fun game!)</p>
-
-        <div class="card game">
-          <div class="ingredients" id="ingredients" aria-label="Basmati rice">
-            <!-- chips created by JS -->
-          </div>
-          <div class="dropzones">
-            <div class="zone" data-country="Nigeria" aria-label="Nigeria drop zone">
-              <h4>Nigeria 🇳🇬</h4>
-              <div class="bin" id="bin-Nigeria"></div>
-            </div>
-            <div class="zone" data-country="Ghana" aria-label="Ghana drop zone">
-              <h4>Ghana 🇬🇭</h4>
-              <div class="bin" id="bin-Ghana"></div>
-            </div>
-            <div class="zone" data-country="Senegal" aria-label="Senegal drop zone">
-              <h4>Senegal 🇸🇳</h4>
-              <div class="bin" id="bin-Senegal"></div>
-            </div>
-          </div>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <button class="btn" id="checkGame">Check Answers</button>
-            <button class="btn secondary" id="resetGame">Reset Game</button>
-            <span id="gameMsg" class="small" role="status" aria-live="polite"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Share Your Jollof Story -->
-<section id="share">
-  <div class="container">
-    <h2 class="section-title">Share Your Jollof Story</h2>
-    <p class="section-sub">Tell us about your favorite jollof or send us your recipe!</p>
-
-    <form action="#" method="post" class="card" aria-label="Jollof Story Form">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" required placeholder="Enter your name">
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required placeholder="Enter your email">
-
-      <label for="country">Your Country:</label>
-      <select id="country" name="country" required>
-        <option value="">Select your country</option>
-        <option value="Nigeria">Nigeria 🇳🇬</option>
-        <option value="Ghana">Ghana 🇬🇭</option>
-        <option value="Senegal">Senegal 🇸🇳</option>
-        <option value="Other">Other</option>
-      </select>
-
-      <label for="story">Your Jollof Story or Recipe:</label>
-      <textarea id="story" name="story" rows="5" required placeholder="Write your story here..."></textarea>
-
-      <button type="submit" class="btn">Submit</button>
-    </form>
-  </div>
+</div>
 </section>
 
-  </main>
+<section>
+<div class="container">
 
-  <footer class="footer">
-    <div class="container"></div>
-      <div>© <span id="year"></span> Jollof Showdown. Built for learning & fun.</div>
-      </footer>
+<h2 class="section-title">About The Jollof Showdown</h2>
+
+<p class="section-sub">
+Jollof rice is one of West Africa's most beloved dishes.
+Each country brings its own unique flavor, cooking style,
+and cultural identity to the meal. The famous "Jollof Wars"
+have inspired endless debates about which version tastes best.
+</p>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="section-title">Featured Recipes</h2>
+
+<p class="section-sub">
+Take a quick look at the three most famous styles of Jollof Rice.
+</p>
+
+<div class="grid cards">
+
+<article class="card">
+<img src="images/nigeriajollof.jpg"
+alt="Nigeria Jollof"
+loading="lazy"
+style="width:100%; border-radius:12px;">
+
+<div class="flag">Nigeria 🇳🇬</div>
+
+<h3>Smoky Party Jollof</h3>
+
+<p>
+Known for its smoky flavor, rich tomato base, and delicious
+party-style preparation.
+</p>
+</article>
+
+<article class="card">
+<img src="images/ghanajollof.jpg"
+alt="Ghana Jollof"
+loading="lazy"
+style="width:100%; border-radius:12px;">
+
+<div class="flag">Ghana 🇬🇭</div>
+
+<h3>Well-Spiced Jollof</h3>
+
+<p>
+Prepared with aromatic spices, vegetables, and long-grain rice
+for a rich and satisfying taste.
+</p>
+</article>
+
+<article class="card">
+<img src="images/senegajollof.jpg"
+alt="Senegal Jollof"
+loading="lazy"
+style="width:100%; border-radius:12px;">
+
+<div class="flag">Senegal 🇸🇳</div>
+
+<h3>Thieboudienne</h3>
+
+<p>
+Often considered the origin of Jollof rice and traditionally
+served with fish and vegetables.
+</p>
+</article>
+
+</div>
+
+<div style="text-align:center; margin-top:20px;">
+<a class="btn" href="recipes.html">View Full Recipes</a>
+</div>
+
+</div>
+</section>
+
+<section id="facts">
+<div class="container">
+
+<h2 class="section-title">Fun Facts & Culture</h2>
+
+<p class="section-sub">
+Jollof is more than food—it is a symbol of culture,
+celebration, and friendly rivalry across West Africa.
+</p>
+
+<div class="facts">
+
+<div class="fact">
+<strong>Origins:</strong>
+Many historians trace Jollof rice to the ancient Wolof Empire
+in the Senegambia region.
+</div>
+
+<div class="fact">
+<strong>Smoky Flavor:</strong>
+Nigerian party jollof is famous for its signature smoky taste.
+</div>
+
+<div class="fact">
+<strong>Traditional Name:</strong>
+In Senegal, Jollof is commonly known as
+<em>Thieboudienne (Ceebu Jën)</em>.
+</div>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+<div class="container">
+<div>
+© <span id="year"></span> Jollof Showdown.
+Built for learning & fun.
+</div>
+</div>
+</footer>
+
 </body>
 </html>
