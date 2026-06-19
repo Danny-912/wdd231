@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Clothing Suggestion App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Edo Hub Chamber of Commerce | Directory</title>
+    <meta name="description" content="Explore businesses and organizations in Edo Hub Chamber of Commerce, Benin City, Nigeria.">
+    <meta name="author" content="Odiase Ngozi Daniella">
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:title" content="Edo Hub Chamber of Commerce">
+    <meta property="og:description" content="Business directory and community hub for Benin City businesses.">
+   
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/weather.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather & Clothing Suggestion</h1>
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="recentSearches" class="recent-searches"></div>
+        <div id="weatherResult" class="weather-result"></div>
+        <div id="clothingSuggestion" class="clothing-suggestion"></div>
+    </div>
+
+    <script type="module" src="scripts/weatherapi.js"></script>
+    <script type="module" src="scripts/clothinglogic.js"></script>
+    <script type="module" src="scripts/ui.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
