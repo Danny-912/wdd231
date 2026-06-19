@@ -155,4 +155,30 @@
     // -------- Replace placeholders with your images --------
     // How: swap the .recipe-img div with an <img> tag, e.g.:
     // <img class="recipe-img" src="images/nigeria.jpg" alt="Nigerian jollof" />
-  
+
+
+
+async function loadFact() {
+  try {
+    const response = await fetch('facts.json');
+
+    if (!response.ok) {
+      throw new Error('Could not load facts');
+    }
+
+    const facts = await response.json();
+
+    const randomFact =
+      facts[Math.floor(Math.random() * facts.length)];
+
+    document.getElementById('foodFact').textContent =
+      randomFact.fact;
+
+  } catch (error) {
+    console.error(error);
+    document.getElementById('foodFact').textContent =
+      'Unable to load fact.';
+  }
+}
+
+loadFact();
