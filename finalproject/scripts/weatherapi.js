@@ -13,7 +13,6 @@ export async function fetchWeather(city) {
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error(error);
-        throw error;
-    }
+    console.error("Search Error:", error);
+    alert(error.message);
 }
