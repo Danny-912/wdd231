@@ -33,6 +33,29 @@ export const places = [
     address: "Benin City",
     image: "images/moat.webp",
     description: "One of the world's largest ancient earthworks built for defense."
-}
+},
+
+    {
+    name: "Oba of Benin Palace",
+    address: "Benin City, Edo State",
+    description: "Historic palace of the Oba of Benin.",
+    image: "images/oba-palace.webp"
+},
+
+    {
+        name: "ogbe stadium",
+        address:"benin city edo state",
+        description: "sports center",
+        image: 'images/stadium.webp"
+    },
+
+    {
+         name: "ogba zoo",
+        address:"benin city edo state",
+        description: "recreational center",
+        image: 'images/zoo.webp"
+    },
+        
 
 ];
+
