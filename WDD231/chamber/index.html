@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edo Hub Chamber of Commerce | Home</title>
+    <meta name="description" content="Welcome to Edo Hub Chamber of Commerce - supporting business growth in Benin City.">
+    <meta name="author" content="Odiase Ngozi Daniella">
+
+    <meta property="og:image" content="https://Danny-912.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://danny-912.github.io/wdd231/chamber/directory.html/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER  ================= -->
+<header>
+    <div class="top-bar">
+
+        <div class="logo-section">
+            <img src="images/logo.png" alt="Edo Hub Chamber Logo" width="80" height="80">
+
+            <div>
+                <h2>Edo Hub Chamber</h2>
+                <p>Benin City, Nigeria</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html">Join</a>
+        </nav>
+
+    </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+    <!-- 🌄 HERO SECTION -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Benin City business district">
+
+        <div class="hero-content">
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+    </section>
+
+    <!-- 📅 EVENTS -->
+    <section class="card">
+        <h1>Current Events</h1>
+        <div class="card-content">
+            <p>• Business Networking Night - Friday</p>
+            <p>• Monthly Entrepreneur Meetup</p>
+            <p>• Trade Fair Exhibition Coming Soon</p>
+        </div>
+    </section>
+
+    <!-- 🌦 WEATHER -->
+    <section class="card">
+        <h3>Weather</h3>
+        <div class="card-content weather-info">
+
+            <img id="weather-icon" alt="Weather icon">
+
+            <div class="weather-details">
+                <p id="temp">Loading...</p>
+                <p id="desc"></p>
+            </div>
+
+        </div>
+
+        <div id="forecast"></div>
+    </section>
+
+    <!-- 🏢 SPOTLIGHTS -->
+    <section class="spotlights">
+        <h3>Business Spotlights</h3>
+        <div id="spotlight-container" class="spotlight-grid"></div>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER (REUSED) ================= -->
+<footer>
+
+    <section class="footer-info">
+        <h3>Edo Hub Chamber of Commerce</h3>
+        <p>Benin City, Edo State, Nigeria</p>
+        <p>Email: info@edohub.org</p>
+        <p>Phone: +234 912 901 5352</p>
+    </section>
+
+    <section class="socials">
+        <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
+    </section>
+
+    <p>&copy; <span id="currentyear"></span></p>
+    <p id="lastModified"></p>
+
+</footer>
+
+<script src="scripts/home.js" defer></script>
+
+</body>
+</html>

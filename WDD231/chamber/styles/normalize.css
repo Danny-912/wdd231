@@ -1,0 +1,83 @@
+/* -------------------- */
+/* LARGE SCREEN STYLES */
+/* -------------------- */
+
+@media screen and (min-width: 768px) {
+
+    /* -------------------- */
+    /* HEADER */
+    /* -------------------- */
+
+    #menu {
+        display: none;
+    }
+
+    .top-bar {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav {
+        margin-left: auto;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navigation li {
+        border: none;
+    }
+
+    .navigation a {
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+    /* -------------------- */
+    /* MAIN */
+    /* -------------------- */
+
+    main {
+        padding: 2rem;
+    }
+
+    /* -------------------- */
+    /* GRID VIEW */
+    /* -------------------- */
+
+    #members.grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    /* -------------------- */
+    /* LIST VIEW */
+    /* -------------------- */
+
+    #members.list section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    /* -------------------- */
+    /* FOOTER */
+    /* -------------------- */
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .development-info {
+        text-align: right;
+    }
+}

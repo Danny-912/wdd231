@@ -1,0 +1,654 @@
+/* -------------------- */
+/* ROOT VARIABLES */
+/* -------------------1d4ed8-   #111827 *   #1E3A5F*/
+
+:root {
+    --primary-color: #00356B;
+    --dark-blue:  #1E3A5F;
+    --light-blue: #DBEAFE;
+    --background-color: #F8FAFC;
+    --text-color: #F8FAFC;
+    --white: #ffffff;
+
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* -------------------- */
+/* GLOBAL STYLES */
+/* -------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: #111827;
+    line-height: 1.6;
+}
+
+/* -------------------- */
+/* TYPOGRAPHY */
+/* -------------------- */
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    color: var(--dark-blue);
+}
+
+/* -------------------- */
+/* HEADER */
+/* -------------------- */
+
+header {
+    background-color: #00356B;
+    color: #F8FAFC;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-section img {
+    border-radius: 10px;
+}
+
+.logo-section p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* -------------------- */
+/* NAVIGATION */
+/* -------------------- */
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #F8FAFC;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #F8FAFC;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #F8FAFC;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    background-color: #F8FAFC;
+}
+
+.active {
+    background-color: #F8FAFC;
+}
+
+/* -------------------- */
+/* MAIN */
+/* -------------------- */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* -------------------- */
+/* BUTTONS */
+/* -------------------- */
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.menu-buttons button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.menu-buttons button:hover {
+    background-color: #F8FAFC;
+}
+
+/* -------------------- */
+/* MEMBER CARDS */
+/* -------------------- */
+
+#members.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+#members section {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#members img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#members h3 {
+    margin: 1rem 0 0.5rem;
+    color: var(--dark-blue);
+}
+
+#members p {
+    margin: 0.5rem 0;
+}
+
+#members a {
+    color: var(--primary-color);
+    word-break: break-word;
+}
+
+/* -------------------- */
+/* LIST VIEW */
+/* -------------------- */
+
+#members.list {
+    display: flex;
+    flex-direction: column;
+}
+
+#members.list section {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+}
+
+#members.list img {
+    display: none;
+}
+
+/* -------------------- */
+/* FOOTER */
+/* -------------------- */
+
+footer {
+    background-color: #00356B;
+    color: var(--white);
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer section {
+    margin-bottom: 2rem;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socials img {
+    border-radius: 8px;
+}
+
+/* -------------------- */
+/* LINKS */
+/* -------------------- */
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* -------------------- */
+/* ACCESSIBILITY */
+/* -------------------- */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.cta-button {
+    background-color: #d9d9d9;
+    color: black;
+    text-decoration: none;
+    padding: 0.8rem 1.3rem;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+
+/* =========================
+   HOME TITLE
+========================= */
+
+.home-title {
+    font-size: 2.3rem;
+    margin: 1.5rem 0 1rem;
+}
+
+
+/* =========================
+   HOME GRID
+========================= */
+
+.home-grid {
+    display: grid;
+    gap: 0.7rem;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background-color: #efefef;
+    border: 1px solid #d0d0d0;
+}
+
+.card h3 {
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0.7rem 1rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.card-content {
+    padding: 1rem;
+    min-height: 170px;
+}
+
+
+/* =========================
+   WEATHER
+========================= */
+
+.weather-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.weather-info img {
+    width: 80px;
+}
+
+.weather-details p {
+    margin: 0.4rem 0;
+}
+
+
+/* =========================
+   FORECAST
+========================= */
+
+.forecast-card p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* =========================
+   SPOTLIGHTS
+========================= */
+
+.spotlights {
+    margin-top: 2rem;
+}
+
+.spotlight-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.spotlight-card h3 {
+    margin: 1rem 0 0;
+    font-size: 2rem;
+}
+
+.tagline {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.spotlight-card hr {
+    border: none;
+    border-top: 1px solid #999;
+    margin: 0.5rem 0 1rem;
+}
+
+.spotlight-content {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+    align-items: center;
+    text-align: left;
+}
+
+.spotlight-content img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.spotlight-info p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.spotlight-info a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 2rem;
+}
+
+
+
+.join-container {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* desktop layout */
+@media (min-width: 768px) {
+  .join-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* form styling */
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+/* cards */
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* animation (NO hover) */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* modal */
+dialog {
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
+
+
+/* ==========================
+DISCOVER PAGE
+========================== */
+
+.discover-title {
+    text-align: center;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+#visit-message {
+    background: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+#discover-cards {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.discover-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+
+    display: grid;
+
+    grid-template-areas:
+        "title"
+        "image"
+        "address"
+        "description"
+        "button";
+
+    gap: .75rem;
+}
+
+.discover-card h2 {
+    grid-area: title;
+    color: var(--dark-blue);
+}
+
+.discover-card figure {
+    grid-area: image;
+    margin: 0;
+}
+
+.discover-card address {
+    grid-area: address;
+    font-style: normal;
+}
+
+.discover-card p {
+    grid-area: description;
+}
+
+.discover-card button {
+    grid-area: button;
+
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: .75rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* MEDIUM */
+
+@media (min-width: 641px) {
+
+.discover-card {
+
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-areas:
+        "image title"
+        "image address"
+        "image description"
+        "image button";
+}
+
+}
+
+
+/* LARGE */
+
+@media (min-width: 1025px) {
+
+.discover-card {
+
+    grid-template-columns: 2fr 1fr;
+
+    grid-template-areas:
+        "title image"
+        "address image"
+        "description image"
+        "button image";
+}
+
+.discover-card img {
+    transition: transform .3s ease;
+}
+
+.discover-card img:hover {
+    transform: scale(1.05);
+}
+
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a.active {
+    background-color: white;
+    color: var(--primary-color);
+}

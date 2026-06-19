@@ -1,0 +1,113 @@
+.container {
+    max-width: 500px;
+    width: 90%;
+    margin-top: 50px;
+    text-align: center;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#cityInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#searchBtn {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background-color: #45a049;
+}
+
+.weather-result, .clothing-suggestion {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.recent-searches {
+    margin-top: 10px;
+}
+
+.recent-searches button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+}
+
+.recent-searches button:hover {
+    background-color: #0b7dda;
+}
+/* Add this at the top */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    #cityInput {
+        width: 65%;
+        font-size: 14px;
+    }
+
+    #searchBtn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .weather-result, .clothing-suggestion {
+        font-size: 16px;
+    }
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #87CEEB; /* Default sky-blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
